@@ -1,0 +1,28 @@
+# Multi-token prediction on a mini-PC — the measured decode recipe
+
+One llama.cpp flag turns on the multi-token-prediction head already shipped
+inside the Qwen3.8-27B GGUF everyone downloaded: paired measurements put
+decode speed up +33% to +39% on the two founding 24 GB NVIDIA cards, and the
+living community table spans +33% to +145% across 53 community configurations on both GPU
+vendors, with the largest relative wins on bandwidth-poor mini-PC parts. No
+new files, no conversion, no custom build. These notes restate the recipe, the
+two tuning knobs, what breaks, and our own Strix Halo bench numbers.
+
+## Canonical links
+
+- This repo: https://github.com/simongonzalezdc/resonant-mtp-recipe
+- Canonical community repo: https://github.com/sudoingX/qwen38-mtp (Apache-2.0) — the recipe, the founding paired A/B, the living table
+- Bench companion: https://github.com/KyaniteLabs/qwen38-27b-strix-halo (MIT) — our Strix Halo numbers
+
+## Key facts
+
+- License: MIT
+- Evidence labels preserved: PAIRED (the founding method, the only headline
+  class), COMMUNITY (per-rig rows, absolutes not cross-comparable), SCREEN
+  (shape, never ranking)
+- Nothing here re-measures or re-brands anything
+
+Relationship: community gift by Kyanite Labs for ResonantOS — canonical
+source: https://github.com/sudoingX/qwen38-mtp; this adaptation is
+non-canonical; where a number here ever disagrees with its source, the source
+wins — flag an issue here or there.
