@@ -4,7 +4,7 @@ Notes for people serving local models on their own hardware: one llama.cpp
 flag turns on the multi-token-prediction head already shipped inside the
 Qwen3.8-27B GGUF everyone downloaded, and the paired measurements put decode
 speed up `+33%` to `+39%` on the two founding 24 GB NVIDIA cards. The living
-community table now spans `+33%` to `+107%` across ten rigs on both GPU
+community table now spans `+33%` to `+145%` across 53 configurations on both GPU
 vendors, with the largest relative wins on the bandwidth-poor mini-PC
 parts. No new files, no conversion, no custom build.
 
